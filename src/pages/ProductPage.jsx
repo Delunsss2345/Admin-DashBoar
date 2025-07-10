@@ -6,13 +6,13 @@ import CategoryDistribution from "@/components/Common/CategoryDistribution";
 import ProductTable from "../components/Products/ProductTable";
 
 const salesTrend = [
-  { name: "Jul", sales: 4200 },
-  { name: "Aug", sales: 3800 },
-  { name: "Sep", sales: 5100 },
-  { name: "Nov", sales: 5400 },
-  { name: "Dec", sales: 7200 },
-  { name: "Apr", sales: 6300 },
-  { name: "Jun", sales: 9500 },
+  { name: "Jul", data: 4200 },
+  { name: "Aug", data: 3800 },
+  { name: "Sep", data: 5100 },
+  { name: "Nov", data: 5400 },
+  { name: "Dec", data: 7200 },
+  { name: "Apr", data: 6300 },
+  { name: "Jun", data: 9500 },
 ];
 
 const categoryData = [
@@ -44,7 +44,7 @@ const ProductPage = () => {
         <ProductTable />
       </motion.div>
       {/* Charts */}
-      <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-auto">
+      <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-hidden">
         <SaleChart data={salesTrend} title='Sales Overview' />
         <CategoryDistribution data={categoryData} title='Category Distribution' />
       </div>

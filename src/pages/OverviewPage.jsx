@@ -45,7 +45,7 @@ const OverviewPage = () => {
         <StatCard icon={<TrendingUp size={20} className="text-purple-400" />} title='Conversion Rate' stat={'3.45%'} />
       </motion.div>
       {/* Charts */}
-      <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-auto">
+      <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-hidden">
         <SaleChart data={salesData} title='Sales Overview' />
         <CategoryDistribution data={categoryData} title='Category Distribution' />
         <SalesByChannel />

@@ -14,7 +14,7 @@ const SettingPage = () => {
                 <div className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-6">
                     <div className="relative block min-w-20 min-h-20 size-20 sm:size-24">
                         <img
-                            src="/public/avatar.jpg"
+                            src="/avatar.jpg"
                             alt="Profile"
                             className="w-full h-full sm:w-24 sm:h-24 rounded-full object-cover"
                         />

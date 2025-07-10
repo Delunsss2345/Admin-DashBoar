@@ -59,7 +59,7 @@ const OrderPage = () => {
             </motion.div>
 
 
-            <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-auto">
+            <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-hidden">
                 <SaleChart data={orderData} title='Sales Orders' />
                 <CategoryDistribution data={shippingData} title='Ship Distribution' />
             </div>

@@ -71,7 +71,7 @@ const AnalyticsPage = () => {
             </motion.div>
 
             <AnalyticsChart />
-            <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll">
+            <div className="grid lg:grid-cols-2 gap-8 overflow-x-scroll sm:overflow-hidden">
                 <SaleChart data={salesData} title='Sales Overview' />
                 <CategoryDistribution data={categoryData} title='Category Distribution' />
             </div></>
