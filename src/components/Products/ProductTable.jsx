@@ -72,7 +72,7 @@ const ProductTable = () => {
                         {products.map((p, idx) => (
                             <tr key={idx} className="border-t border-gray-800 hover:bg-gray-900 transition-colors">
                                 <td className="py-3 flex items-center gap-3">
-                                    <img src="/public/product.jpg" alt={p.name} className="w-8 h-8 rounded-full object-cover" />
+                                    <img src="/product.jpg" alt={p.name} className="w-8 h-8 rounded-full object-cover" />
                                     <span className="text-gray-100 font-medium">{p.name}</span>
                                 </td>
                                 <td className="py-3 text-gray-300">{p.category}</td>
